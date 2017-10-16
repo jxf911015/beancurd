@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xiangfei.beancurd.dao.AdminMapper" >
+  <resultMap id="BaseResultMap" type="com.xiangfei.beancurd.pojo.Admin" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="avatar" property="avatar" jdbcType="VARCHAR" />
+    <result column="admname" property="admname" jdbcType="VARCHAR" />
+    <result column="password" property="password" jdbcType="VARCHAR" />
+    <result column="email" property="email" jdbcType="VARCHAR" />
+    <result column="phone" property="phone" jdbcType="VARCHAR" />
+    <result column="question" property="question" jdbcType="VARCHAR" />
+    <result column="answer" property="answer" jdbcType="VARCHAR" />
+    <result column="role" property="role" jdbcType="INTEGER" />
+    <result column="admnum" property="admnum" jdbcType="VARCHAR" />
+    <result column="fans" property="fans" jdbcType="INTEGER" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+    <result column="introduction" property="introduction" jdbcType="VARCHAR" />
+    <result column="introduce" property="introduce" jdbcType="VARCHAR" />
+    <result column="outaddress" property="outaddress" jdbcType="VARCHAR" />
+    <result column="inaddress" property="inaddress" jdbcType="VARCHAR" />
+    <result column="telenumber" property="telenumber" jdbcType="VARCHAR" />
+    <result column="returnPolicy" property="returnpolicy" jdbcType="VARCHAR" />
+    <result column="indormer" property="indormer" jdbcType="INTEGER" />
+    <result column="nickname" property="nickname" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, avatar, admname, password, email, phone, question, answer, role, admnum, fans, 
+    create_time, update_time, introduction, introduce, outaddress, inaddress, telenumber, 
+    returnPolicy, indormer, nickname
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from bc_admin
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from bc_admin
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.xiangfei.beancurd.pojo.Admin" >
+    insert into bc_admin (id, avatar, admname, 
+      password, email, phone, 
+      question, answer, role, 
+      admnum, fans, create_time, 
+      update_time, introduction, introduce, 
+      outaddress, inaddress, telenumber, 
+      returnPolicy, indormer, nickname
+      )
+    values (#{id,jdbcType=INTEGER}, #{avatar,jdbcType=VARCHAR}, #{admname,jdbcType=VARCHAR}, 
+      #{password,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR}, #{phone,jdbcType=VARCHAR}, 
+      #{question,jdbcType=VARCHAR}, #{answer,jdbcType=VARCHAR}, #{role,jdbcType=INTEGER}, 
+      #{admnum,jdbcType=VARCHAR}, #{fans,jdbcType=INTEGER}, now(), 
+      now(), #{introduction,jdbcType=VARCHAR}, #{introduce,jdbcType=VARCHAR}, 
+      #{outaddress,jdbcType=VARCHAR}, #{inaddress,jdbcType=VARCHAR}, #{telenumber,jdbcType=VARCHAR}, 
+      #{returnpolicy,jdbcType=VARCHAR}, #{indormer,jdbcType=INTEGER}, #{nickname,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.xiangfei.beancurd.pojo.Admin" >
+    insert into bc_admin
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="avatar != null" >
+        avatar,
+      </if>
+      <if test="admname != null" >
+        admname,
+      </if>
+      <if test="password != null" >
+        password,
+      </if>
+      <if test="email != null" >
+        email,
+      </if>
+      <if test="phone != null" >
+        phone,
+      </if>
+      <if test="question != null" >
+        question,
+      </if>
+      <if test="answer != null" >
+        answer,
+      </if>
+      <if test="role != null" >
+        role,
+      </if>
+      <if test="admnum != null" >
+        admnum,
+      </if>
+      <if test="fans != null" >
+        fans,
+      </if>
+      <if test="createTime != null" >
+        create_time,
+      </if>
+      <if test="updateTime != null" >
+        update_time,
+      </if>
+      <if test="introduction != null" >
+        introduction,
+      </if>
+      <if test="introduce != null" >
+        introduce,
+      </if>
+      <if test="outaddress != null" >
+        outaddress,
+      </if>
+      <if test="inaddress != null" >
+        inaddress,
+      </if>
+      <if test="telenumber != null" >
+        telenumber,
+      </if>
+      <if test="returnpolicy != null" >
+        returnPolicy,
+      </if>
+      <if test="indormer != null" >
+        indormer,
+      </if>
+      <if test="nickname != null" >
+        nickname,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="avatar != null" >
+        #{avatar,jdbcType=VARCHAR},
+      </if>
+      <if test="admname != null" >
+        #{admname,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null" >
+        #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="email != null" >
+        #{email,jdbcType=VARCHAR},
+      </if>
+      <if test="phone != null" >
+        #{phone,jdbcType=VARCHAR},
+      </if>
+      <if test="question != null" >
+        #{question,jdbcType=VARCHAR},
+      </if>
+      <if test="answer != null" >
+        #{answer,jdbcType=VARCHAR},
+      </if>
+      <if test="role != null" >
+        #{role,jdbcType=INTEGER},
+      </if>
+      <if test="admnum != null" >
+        #{admnum,jdbcType=VARCHAR},
+      </if>
+      <if test="fans != null" >
+        #{fans,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null" >
+        now(),
+      </if>
+      <if test="updateTime != null" >
+        now(),
+      </if>
+      <if test="introduction != null" >
+        #{introduction,jdbcType=VARCHAR},
+      </if>
+      <if test="introduce != null" >
+        #{introduce,jdbcType=VARCHAR},
+      </if>
+      <if test="outaddress != null" >
+        #{outaddress,jdbcType=VARCHAR},
+      </if>
+      <if test="inaddress != null" >
+        #{inaddress,jdbcType=VARCHAR},
+      </if>
+      <if test="telenumber != null" >
+        #{telenumber,jdbcType=VARCHAR},
+      </if>
+      <if test="returnpolicy != null" >
+        #{returnpolicy,jdbcType=VARCHAR},
+      </if>
+      <if test="indormer != null" >
+        #{indormer,jdbcType=INTEGER},
+      </if>
+      <if test="nickname != null" >
+        #{nickname,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.xiangfei.beancurd.pojo.Admin" >
+    update bc_admin
+    <set >
+      <if test="avatar != null" >
+        avatar = #{avatar,jdbcType=VARCHAR},
+      </if>
+      <if test="admname != null" >
+        admname = #{admname,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null" >
+        password = #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="email != null" >
+        email = #{email,jdbcType=VARCHAR},
+      </if>
+      <if test="phone != null" >
+        phone = #{phone,jdbcType=VARCHAR},
+      </if>
+      <if test="question != null" >
+        question = #{question,jdbcType=VARCHAR},
+      </if>
+      <if test="answer != null" >
+        answer = #{answer,jdbcType=VARCHAR},
+      </if>
+      <if test="role != null" >
+        role = #{role,jdbcType=INTEGER},
+      </if>
+      <if test="admnum != null" >
+        admnum = #{admnum,jdbcType=VARCHAR},
+      </if>
+      <if test="fans != null" >
+        fans = #{fans,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null" >
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null" >
+        update_time = now(),
+      </if>
+      <if test="introduction != null" >
+        introduction = #{introduction,jdbcType=VARCHAR},
+      </if>
+      <if test="introduce != null" >
+        introduce = #{introduce,jdbcType=VARCHAR},
+      </if>
+      <if test="outaddress != null" >
+        outaddress = #{outaddress,jdbcType=VARCHAR},
+      </if>
+      <if test="inaddress != null" >
+        inaddress = #{inaddress,jdbcType=VARCHAR},
+      </if>
+      <if test="telenumber != null" >
+        telenumber = #{telenumber,jdbcType=VARCHAR},
+      </if>
+      <if test="returnpolicy != null" >
+        returnPolicy = #{returnpolicy,jdbcType=VARCHAR},
+      </if>
+      <if test="indormer != null" >
+        indormer = #{indormer,jdbcType=INTEGER},
+      </if>
+      <if test="nickname != null" >
+        nickname = #{nickname,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.xiangfei.beancurd.pojo.Admin" >
+    update bc_admin
+    set avatar = #{avatar,jdbcType=VARCHAR},
+      admname = #{admname,jdbcType=VARCHAR},
+      password = #{password,jdbcType=VARCHAR},
+      email = #{email,jdbcType=VARCHAR},
+      phone = #{phone,jdbcType=VARCHAR},
+      question = #{question,jdbcType=VARCHAR},
+      answer = #{answer,jdbcType=VARCHAR},
+      role = #{role,jdbcType=INTEGER},
+      admnum = #{admnum,jdbcType=VARCHAR},
+      fans = #{fans,jdbcType=INTEGER},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      update_time = now(),
+      introduction = #{introduction,jdbcType=VARCHAR},
+      introduce = #{introduce,jdbcType=VARCHAR},
+      outaddress = #{outaddress,jdbcType=VARCHAR},
+      inaddress = #{inaddress,jdbcType=VARCHAR},
+      telenumber = #{telenumber,jdbcType=VARCHAR},
+      returnPolicy = #{returnpolicy,jdbcType=VARCHAR},
+      indormer = #{indormer,jdbcType=INTEGER},
+      nickname = #{nickname,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="checkadmname" resultType="int" parameterType="string">
+  	select 
+  	count(1)
+  	from bc_admin
+  	where admname = #{ admname }
+  </select>
+  <select id="checkPhone" resultType="int" parameterType="string">
+  	select 
+  	count(1)
+  	from bc_admin
+  	where phone = #{ phone }
+  </select>
+  <select id="selectadmin" resultMap="BaseResultMap" parameterType="string" >
+    select 
+    <include refid="Base_Column_List" />
+    from bc_admin
+    where admname = #{admname,jdbcType=INTEGER}
+  </select> 
+  <select id="selectadmmessage" resultMap="BaseResultMap" parameterType="string" >
+    select 
+    <include refid="Base_Column_List" />
+    from bc_admin
+    where admname = #{phone,jdbcType=VARCHAR}
+    or phone = #{phone,jdbcType=VARCHAR}
+  </select>
+  <select id="selectLogin" resultMap="BaseResultMap" parameterType="string">
+  	select
+  	<include refid="Base_Column_List" />
+  	from bc_admin
+  	where phone = #{ phone }
+  	and password = #{ password }
+  	or admname = #{ phone }
+  	and password = #{ password }
+  </select>
+</mapper>
