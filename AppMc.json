@@ -1,0 +1,1993 @@
+{
+  "front-version": "2.10.1",
+  "version": 3,
+  "nodes": [
+    {
+      "type": "Project",
+      "description": "",
+      "id": "d6aa125d-0d81-4994-9936-95ba39dda849",
+      "lastModified": "2017-10-26T12:16:00.234+08:00",
+      "name": "AppMc",
+      "remoteModification": "2017-10-26T04:16:01.138Z"
+    },
+    {
+      "type": "Service",
+      "id": "1fc731d5-80b6-47b0-b795-9c47c82a3081",
+      "lastModified": "2017-10-23T14:24:33.447+08:00",
+      "name": "资质资料",
+      "parentId": "d6aa125d-0d81-4994-9936-95ba39dda849"
+    },
+    {
+      "uriEditor": true,
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Form",
+        "autoSetLength": true
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": [
+            {
+              "enabled": true,
+              "name": "token",
+              "value": "1234"
+            },
+            {
+              "enabled": true,
+              "name": "adminId",
+              "value": "65"
+            }
+          ]
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "192.168.1.200:8082",
+        "path": "/APPMerchant/appVerification/AppAdmSelectVerMessage.do"
+      },
+      "id": "014bbe36-ebed-4617-9946-47be95ef3368",
+      "lastModified": "2017-10-23T15:47:35.070+08:00",
+      "name": "管理员查看资质资料",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/x-www-form-urlencoded"
+        }
+      ],
+      "metaInfo": {},
+      "parentId": "1fc731d5-80b6-47b0-b795-9c47c82a3081"
+    },
+    {
+      "uriEditor": true,
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Form",
+        "autoSetLength": true
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": [
+            {
+              "enabled": true,
+              "name": "adminId",
+              "value": "64"
+            },
+            {
+              "enabled": true,
+              "name": "vername",
+              "value": "园缘圆"
+            },
+            {
+              "enabled": true,
+              "name": "phone",
+              "value": "15239200617"
+            },
+            {
+              "enabled": true,
+              "name": "idcard",
+              "value": "410927199003269010"
+            },
+            {
+              "enabled": true,
+              "name": "license",
+              "value": "410927199003269010"
+            },
+            {
+              "enabled": true,
+              "name": "bankcard",
+              "value": "6228482362000157711"
+            },
+            {
+              "enabled": true,
+              "name": "product",
+              "value": "无机食品"
+            },
+            {
+              "enabled": true,
+              "name": "sheng",
+              "value": "河南省"
+            },
+            {
+              "enabled": true,
+              "name": "shi",
+              "value": "濮阳市"
+            },
+            {
+              "enabled": true,
+              "name": "quxian",
+              "value": "台前县"
+            },
+            {
+              "enabled": true,
+              "name": "address",
+              "value": "吴坝乡朱庄村"
+            },
+            {
+              "enabled": true,
+              "name": "img_status",
+              "value": "1"
+            },
+            {
+              "enabled": true,
+              "name": "status",
+              "value": "1"
+            },
+            {
+              "enabled": true,
+              "name": "token",
+              "value": "7201"
+            },
+            {
+              "enabled": true,
+              "name": "role",
+              "value": "2"
+            }
+          ]
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "192.168.1.200:8082",
+        "path": "/APPMerchant/appVerification/AppAddVerMessage.do"
+      },
+      "id": "4f66d419-3df1-41eb-817f-0ca18e140b1b",
+      "lastModified": "2017-10-23T16:50:39.317+08:00",
+      "name": "新增资质审核资料",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/x-www-form-urlencoded"
+        }
+      ],
+      "metaInfo": {},
+      "parentId": "1fc731d5-80b6-47b0-b795-9c47c82a3081"
+    },
+    {
+      "uriEditor": true,
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Form",
+        "autoSetLength": true
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": [
+            {
+              "enabled": true,
+              "name": "token",
+              "value": "7201"
+            },
+            {
+              "enabled": true,
+              "name": "adminId",
+              "value": "64"
+            },
+            {
+              "enabled": true,
+              "name": "verificationId",
+              "value": "21"
+            },
+            {
+              "enabled": true,
+              "name": "status",
+              "value": "40"
+            },
+            {
+              "name": "returnyy",
+              "value": ""
+            }
+          ]
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "192.168.1.200:8082",
+        "path": "/APPMerchant/appVerification/AppAdmAuditVerMessage.do"
+      },
+      "id": "97c0e23c-3cf0-45f9-a5da-0fb4302ee5cb",
+      "lastModified": "2017-10-23T17:22:50.407+08:00",
+      "name": "管理员资质审核",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/x-www-form-urlencoded"
+        }
+      ],
+      "metaInfo": {},
+      "parentId": "1fc731d5-80b6-47b0-b795-9c47c82a3081"
+    },
+    {
+      "uriEditor": true,
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Form",
+        "autoSetLength": true
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": [
+            {
+              "enabled": true,
+              "name": "token",
+              "value": "4368"
+            },
+            {
+              "enabled": true,
+              "name": "statusNum",
+              "value": "64"
+            },
+            {
+              "enabled": true,
+              "name": "pageSize",
+              "value": "1"
+            },
+            {
+              "enabled": true,
+              "name": "pageNum",
+              "value": "10"
+            }
+          ]
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "192.168.1.200:8082",
+        "path": "/APPMerchant/appVerification/selectVerByStatus.do"
+      },
+      "id": "b57a3827-3bf9-49d7-9bd2-b14c9b6bade0",
+      "lastModified": "2017-10-23T17:25:48.927+08:00",
+      "name": "管理员根据状态值查询资质资料",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/x-www-form-urlencoded"
+        }
+      ],
+      "metaInfo": {},
+      "parentId": "1fc731d5-80b6-47b0-b795-9c47c82a3081"
+    },
+    {
+      "uriEditor": true,
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Form",
+        "autoSetLength": true
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": [
+            {
+              "enabled": true,
+              "name": "adminId",
+              "value": "64"
+            },
+            {
+              "enabled": true,
+              "name": "vername",
+              "value": "testtest"
+            },
+            {
+              "enabled": true,
+              "name": "phone",
+              "value": "15239200617"
+            },
+            {
+              "enabled": true,
+              "name": "idcard",
+              "value": "41092722269010"
+            },
+            {
+              "enabled": true,
+              "name": "license",
+              "value": "41092223269010"
+            },
+            {
+              "enabled": true,
+              "name": "bankcard",
+              "value": "622848333157711"
+            },
+            {
+              "enabled": true,
+              "name": "product",
+              "value": "无机食品11"
+            },
+            {
+              "enabled": true,
+              "name": "sheng",
+              "value": "河南省11"
+            },
+            {
+              "enabled": true,
+              "name": "shi",
+              "value": "濮阳市11"
+            },
+            {
+              "enabled": true,
+              "name": "quxian",
+              "value": "台前县11"
+            },
+            {
+              "enabled": true,
+              "name": "address",
+              "value": "吴坝乡朱庄村11"
+            },
+            {
+              "enabled": true,
+              "name": "img_status",
+              "value": "2"
+            },
+            {
+              "enabled": true,
+              "name": "status",
+              "value": "1"
+            },
+            {
+              "enabled": true,
+              "name": "token",
+              "value": "7201"
+            },
+            {
+              "name": "role",
+              "value": "2"
+            }
+          ]
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "192.168.1.200:8082",
+        "path": "/APPMerchant/appVerification/AppUpdateVerMessage.do"
+      },
+      "id": "f91eabd9-b9f3-4da7-ac54-5b8f2f652074",
+      "lastModified": "2017-10-23T16:52:20.376+08:00",
+      "name": "修改资质审核资料",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/x-www-form-urlencoded"
+        }
+      ],
+      "metaInfo": {},
+      "parentId": "1fc731d5-80b6-47b0-b795-9c47c82a3081"
+    },
+    {
+      "type": "Service",
+      "id": "4fa8741b-25a8-4ebc-9104-64dfee24a49f",
+      "lastModified": "2017-10-24T16:19:19.724+08:00",
+      "name": "商户模块",
+      "parentId": "d6aa125d-0d81-4994-9936-95ba39dda849"
+    },
+    {
+      "uriEditor": true,
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Form",
+        "autoSetLength": true
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": [
+            {
+              "enabled": true,
+              "name": "phone",
+              "value": "test-001"
+            },
+            {
+              "enabled": true,
+              "name": "password",
+              "value": "111111"
+            }
+          ]
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "192.168.1.200:8082",
+        "path": "/APPMerchant/appadmin/AppAdminLogin.do"
+      },
+      "id": "03930580-d95d-40d3-9c3e-48b4e04e44d3",
+      "lastModified": "2017-10-23T10:50:15.255+08:00",
+      "name": "商户登录",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/x-www-form-urlencoded"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "auth0|59eef034467ec0247cdbff43"
+      },
+      "parentId": "4fa8741b-25a8-4ebc-9104-64dfee24a49f"
+    },
+    {
+      "uriEditor": true,
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Form",
+        "autoSetLength": true
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": [
+            {
+              "enabled": true,
+              "name": "token",
+              "value": "9226"
+            },
+            {
+              "enabled": true,
+              "name": "adminId",
+              "value": "48"
+            },
+            {
+              "enabled": true,
+              "name": "nickname",
+              "value": "aaaaaaa"
+            }
+          ]
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "192.168.1.200:8082",
+        "path": "/APPMerchant/appadmin/AppupdateAdminNickname.do"
+      },
+      "id": "08f46bf4-ce68-42a3-9376-1ffdc544529a",
+      "lastModified": "2017-10-24T16:46:46.881+08:00",
+      "name": "修改商户昵称",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/x-www-form-urlencoded"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "auth0|59eef034467ec0247cdbff43"
+      },
+      "parentId": "4fa8741b-25a8-4ebc-9104-64dfee24a49f"
+    },
+    {
+      "uriEditor": true,
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Form",
+        "autoSetLength": true
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": [
+            {
+              "enabled": true,
+              "name": "token",
+              "value": "7713"
+            },
+            {
+              "enabled": true,
+              "name": "adminId",
+              "value": "48"
+            },
+            {
+              "enabled": true,
+              "name": "telenumber",
+              "value": "13213908019"
+            }
+          ]
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "192.168.1.200:8082",
+        "path": "/APPMerchant/appadmin/AppupdateAdminTelenumber.do"
+      },
+      "id": "09981325-1b60-44e3-98e0-b5c6be9ad19a",
+      "lastModified": "2017-10-24T18:28:40.452+08:00",
+      "name": "修改联系电话",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/x-www-form-urlencoded"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "auth0|59eef034467ec0247cdbff43"
+      },
+      "parentId": "4fa8741b-25a8-4ebc-9104-64dfee24a49f"
+    },
+    {
+      "uriEditor": true,
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Form",
+        "autoSetLength": true
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": [
+            {
+              "enabled": true,
+              "name": "token",
+              "value": "6847"
+            },
+            {
+              "enabled": true,
+              "name": "adminId",
+              "value": "48"
+            },
+            {
+              "enabled": true,
+              "name": "outaddress",
+              "value": "1111111222211aaaa111111111"
+            }
+          ]
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "192.168.1.200:8082",
+        "path": "/APPMerchant/appadmin/AppupdateAdminInaddress.do"
+      },
+      "id": "37028170-f157-4a77-95e9-b970d14cc2b9",
+      "lastModified": "2017-10-24T18:21:50.114+08:00",
+      "name": "修改退货地址",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/x-www-form-urlencoded"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "auth0|59eef034467ec0247cdbff43"
+      },
+      "parentId": "4fa8741b-25a8-4ebc-9104-64dfee24a49f"
+    },
+    {
+      "uriEditor": true,
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Form",
+        "autoSetLength": true
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": [
+            {
+              "enabled": true,
+              "name": "admname",
+              "value": "test-001"
+            },
+            {
+              "enabled": true,
+              "name": "phone",
+              "value": "15239200617"
+            },
+            {
+              "enabled": true,
+              "name": "password",
+              "value": "111111"
+            }
+          ]
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "192.168.1.200:8082",
+        "path": "/APPMerchant/appadmin/AppRegister.do"
+      },
+      "id": "42645b52-7d47-418f-8914-70063dfd1947",
+      "lastModified": "2017-10-23T10:49:36.380+08:00",
+      "name": "商户注册",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/x-www-form-urlencoded"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "auth0|59eef034467ec0247cdbff43"
+      },
+      "parentId": "4fa8741b-25a8-4ebc-9104-64dfee24a49f"
+    },
+    {
+      "uriEditor": true,
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Form",
+        "autoSetLength": true
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": [
+            {
+              "enabled": true,
+              "name": "token",
+              "value": "3129"
+            },
+            {
+              "enabled": true,
+              "name": "adminId",
+              "value": "48"
+            },
+            {
+              "enabled": true,
+              "name": "password",
+              "value": "111111"
+            },
+            {
+              "enabled": true,
+              "name": "phone",
+              "value": "15239200617"
+            }
+          ]
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "192.168.1.200:8082",
+        "path": "/APPMerchant/appadmin/AppupdateAdminPhone.do"
+      },
+      "id": "6e587b77-61f0-4084-91e9-e11341943e3a",
+      "lastModified": "2017-10-24T17:21:19.514+08:00",
+      "name": "修改商户安全手机号",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/x-www-form-urlencoded"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "auth0|59eef034467ec0247cdbff43"
+      },
+      "parentId": "4fa8741b-25a8-4ebc-9104-64dfee24a49f"
+    },
+    {
+      "uriEditor": true,
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Form",
+        "autoSetLength": true
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": [
+            {
+              "enabled": true,
+              "name": "phone",
+              "value": "15239200617"
+            }
+          ]
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "192.168.1.200:8082",
+        "path": "/APPMerchant/appadmin/AppsendCode.do"
+      },
+      "id": "802813ee-7d0f-410f-8e7d-7e0b614729d3",
+      "lastModified": "2017-10-23T11:21:45.924+08:00",
+      "name": "发送验证码",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/x-www-form-urlencoded"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "auth0|59eef034467ec0247cdbff43"
+      },
+      "parentId": "4fa8741b-25a8-4ebc-9104-64dfee24a49f"
+    },
+    {
+      "uriEditor": true,
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Form",
+        "autoSetLength": true
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": [
+            {
+              "enabled": true,
+              "name": "token",
+              "value": "3129"
+            },
+            {
+              "enabled": true,
+              "name": "adminId",
+              "value": "48"
+            },
+            {
+              "enabled": true,
+              "name": "introduction",
+              "value": "1111111111111111111111"
+            }
+          ]
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "192.168.1.200:8082",
+        "path": "/APPMerchant/appadmin/AppupdateAdminIntroduction.do"
+      },
+      "id": "c5002a31-c137-419d-bea4-dd8e11e6ecc2",
+      "lastModified": "2017-10-24T17:21:57.911+08:00",
+      "name": "修改商户公告",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/x-www-form-urlencoded"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "auth0|59eef034467ec0247cdbff43"
+      },
+      "parentId": "4fa8741b-25a8-4ebc-9104-64dfee24a49f"
+    },
+    {
+      "uriEditor": true,
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Form",
+        "autoSetLength": true
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": [
+            {
+              "enabled": true,
+              "name": "token",
+              "value": "9226"
+            },
+            {
+              "enabled": true,
+              "name": "adminId",
+              "value": "48"
+            }
+          ]
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "192.168.1.200:8082",
+        "path": "/APPMerchant/appadmin/AppSelectAdminMessage.do"
+      },
+      "id": "cea3daad-6735-4c22-b67f-68e13c729c3b",
+      "lastModified": "2017-10-24T16:18:11.885+08:00",
+      "name": "获取商户信息",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/x-www-form-urlencoded"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "auth0|59eef034467ec0247cdbff43"
+      },
+      "parentId": "4fa8741b-25a8-4ebc-9104-64dfee24a49f"
+    },
+    {
+      "uriEditor": true,
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Form",
+        "autoSetLength": true
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": [
+            {
+              "enabled": true,
+              "name": "token",
+              "value": "7713"
+            },
+            {
+              "enabled": true,
+              "name": "adminId",
+              "value": "48"
+            },
+            {
+              "enabled": true,
+              "name": "returnPolicy",
+              "value": "1111111222211aaaa111111111"
+            }
+          ]
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "192.168.1.200:8082",
+        "path": "/APPMerchant/appadmin/AppupdateAdminReturnPolicy.do"
+      },
+      "id": "d7601177-4576-4e7a-b0f8-5599d631f5bf",
+      "lastModified": "2017-10-24T18:26:54.931+08:00",
+      "name": "修改退货说明",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/x-www-form-urlencoded"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "auth0|59eef034467ec0247cdbff43"
+      },
+      "parentId": "4fa8741b-25a8-4ebc-9104-64dfee24a49f"
+    },
+    {
+      "uriEditor": true,
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Form",
+        "autoSetLength": true
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": [
+            {
+              "enabled": true,
+              "name": "phone",
+              "value": "15239200617"
+            },
+            {
+              "enabled": true,
+              "name": "c",
+              "value": "3567"
+            }
+          ]
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "192.168.1.200:8082",
+        "path": "/APPMerchant/appadmin/AppchickCode.do"
+      },
+      "id": "e026aa09-07db-4fe6-b33d-1befe57bb646",
+      "lastModified": "2017-10-23T11:24:21.259+08:00",
+      "name": "校验验证码",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/x-www-form-urlencoded"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "auth0|59eef034467ec0247cdbff43"
+      },
+      "parentId": "4fa8741b-25a8-4ebc-9104-64dfee24a49f"
+    },
+    {
+      "uriEditor": true,
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Form",
+        "autoSetLength": true
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": [
+            {
+              "enabled": true,
+              "name": "str",
+              "value": "test-002"
+            },
+            {
+              "enabled": true,
+              "name": "type",
+              "value": "admname"
+            }
+          ]
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "192.168.1.200:8082",
+        "path": "/APPMerchant/appadmin/AppcheckValid.do"
+      },
+      "id": "e605174d-3d40-4312-a217-cf0f7fcc113c",
+      "lastModified": "2017-10-23T18:10:07.193+08:00",
+      "name": "检查用户名是否有效",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/x-www-form-urlencoded"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "auth0|59eef034467ec0247cdbff43"
+      },
+      "parentId": "4fa8741b-25a8-4ebc-9104-64dfee24a49f"
+    },
+    {
+      "uriEditor": true,
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Form",
+        "autoSetLength": true
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": [
+            {
+              "enabled": true,
+              "name": "token",
+              "value": "6847"
+            },
+            {
+              "enabled": true,
+              "name": "adminId",
+              "value": "48"
+            },
+            {
+              "enabled": true,
+              "name": "outaddress",
+              "value": "1111111222211aaaa111111111"
+            }
+          ]
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "192.168.1.200:8082",
+        "path": "/APPMerchant/appadmin/AppupdateAdminOutaddress.do"
+      },
+      "id": "e91c9f19-699d-4a4c-9410-f8564ff69f31",
+      "lastModified": "2017-10-24T18:19:14.123+08:00",
+      "name": "修改发货地址",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/x-www-form-urlencoded"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "auth0|59eef034467ec0247cdbff43"
+      },
+      "parentId": "4fa8741b-25a8-4ebc-9104-64dfee24a49f"
+    },
+    {
+      "uriEditor": true,
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Form",
+        "autoSetLength": true
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": [
+            {
+              "enabled": true,
+              "name": "token",
+              "value": "3129"
+            },
+            {
+              "enabled": true,
+              "name": "adminId",
+              "value": "48"
+            },
+            {
+              "enabled": true,
+              "name": "introduce",
+              "value": "1111111111111111111111"
+            }
+          ]
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "192.168.1.200:8082",
+        "path": "/APPMerchant/appadmin/AppupdateAdminIntroduce.do"
+      },
+      "id": "eedff450-518f-4e90-8c83-985a3b05402d",
+      "lastModified": "2017-10-24T18:03:27.905+08:00",
+      "name": "修改商户简介",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/x-www-form-urlencoded"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "auth0|59eef034467ec0247cdbff43"
+      },
+      "parentId": "4fa8741b-25a8-4ebc-9104-64dfee24a49f"
+    },
+    {
+      "type": "Service",
+      "id": "5245c36d-1929-456f-9d3e-ac1f04f1eaae",
+      "lastModified": "2017-10-25T10:06:39.966+08:00",
+      "name": "商品管理",
+      "parentId": "d6aa125d-0d81-4994-9936-95ba39dda849"
+    },
+    {
+      "uriEditor": true,
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Form",
+        "autoSetLength": true
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": [
+            {
+              "enabled": true,
+              "name": "token",
+              "value": "5172"
+            },
+            {
+              "enabled": true,
+              "name": "adminId",
+              "value": "48"
+            }
+          ]
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "192.168.1.200:8082",
+        "path": "/APPMerchant/appproduct/AppSelectAllProduct.do"
+      },
+      "id": "54754eaf-804b-4891-acc9-8486761a809a",
+      "lastModified": "2017-10-25T10:07:35.006+08:00",
+      "name": "查看所有商品",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/x-www-form-urlencoded"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "auth0|59eef034467ec0247cdbff43"
+      },
+      "parentId": "5245c36d-1929-456f-9d3e-ac1f04f1eaae"
+    },
+    {
+      "uriEditor": true,
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Form",
+        "autoSetLength": true
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": [
+            {
+              "enabled": true,
+              "name": "token",
+              "value": "5172"
+            },
+            {
+              "enabled": true,
+              "name": "adminId",
+              "value": "48"
+            },
+            {
+              "enabled": true,
+              "name": "productId",
+              "value": "100000008"
+            }
+          ]
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "192.168.1.200:8082",
+        "path": "/APPMerchant/appproduct/AppSelectProductDetail.do"
+      },
+      "id": "769c3920-f78e-4e59-a5f0-c233072ed42e",
+      "lastModified": "2017-10-25T15:13:01.599+08:00",
+      "name": "查看商品详情",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/x-www-form-urlencoded"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "auth0|59eef034467ec0247cdbff43"
+      },
+      "parentId": "5245c36d-1929-456f-9d3e-ac1f04f1eaae"
+    },
+    {
+      "uriEditor": true,
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Form",
+        "autoSetLength": true
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": [
+            {
+              "enabled": true,
+              "name": "token",
+              "value": "8079"
+            },
+            {
+              "enabled": true,
+              "name": "adminId",
+              "value": "48"
+            },
+            {
+              "enabled": true,
+              "name": "id",
+              "value": "100000008"
+            },
+            {
+              "enabled": true,
+              "name": "name",
+              "value": "4"
+            },
+            {
+              "enabled": true,
+              "name": "subtitle",
+              "value": "4"
+            },
+            {
+              "enabled": true,
+              "name": "main_image",
+              "value": "4"
+            },
+            {
+              "enabled": true,
+              "name": "sub_images",
+              "value": "4"
+            },
+            {
+              "enabled": true,
+              "name": "price",
+              "value": "1"
+            }
+          ]
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "192.168.1.200:8082",
+        "path": "/APPMerchant/appproduct/AppupdateProductDetail.do"
+      },
+      "id": "ccd46587-ba5f-493f-b355-be1e14067f47",
+      "lastModified": "2017-10-25T15:34:53.615+08:00",
+      "name": "修改商品信息",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/x-www-form-urlencoded"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "auth0|59eef034467ec0247cdbff43"
+      },
+      "parentId": "5245c36d-1929-456f-9d3e-ac1f04f1eaae"
+    },
+    {
+      "uriEditor": true,
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Form",
+        "autoSetLength": true
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": [
+            {
+              "enabled": true,
+              "name": "token",
+              "value": "1588"
+            },
+            {
+              "enabled": true,
+              "name": "adminId",
+              "value": "48"
+            },
+            {
+              "enabled": true,
+              "name": "categoryId",
+              "value": "1300"
+            },
+            {
+              "enabled": true,
+              "name": "name",
+              "value": "4"
+            },
+            {
+              "enabled": true,
+              "name": "subtitle",
+              "value": "4"
+            },
+            {
+              "enabled": true,
+              "name": "mainImage",
+              "value": "ge.do?token=3055&adminId=48&category_id=4&admi"
+            },
+            {
+              "enabled": true,
+              "name": "subImages",
+              "value": "ge.do?token=3055&adminId=48&category_id=4&admi"
+            },
+            {
+              "enabled": true,
+              "name": "detail",
+              "value": "0"
+            },
+            {
+              "enabled": true,
+              "name": "price",
+              "value": "0.01"
+            },
+            {
+              "enabled": true,
+              "name": "stock",
+              "value": "100"
+            },
+            {
+              "enabled": true,
+              "name": "status",
+              "value": "4"
+            },
+            {
+              "enabled": true,
+              "name": "collection",
+              "value": "0"
+            },
+            {
+              "enabled": true,
+              "name": "postage",
+              "value": "0.0"
+            },
+            {
+              "enabled": true,
+              "name": "spec",
+              "value": "1"
+            },
+            {
+              "enabled": true,
+              "name": "districtId",
+              "value": "1"
+            },
+            {
+              "enabled": true,
+              "name": "city",
+              "value": "1"
+            },
+            {
+              "enabled": true,
+              "name": "county",
+              "value": "1"
+            },
+            {
+              "name": "createTime",
+              "value": "1"
+            },
+            {
+              "name": "updateTime",
+              "value": "1"
+            },
+            {
+              "enabled": true,
+              "name": "imgStatus",
+              "value": "0"
+            },
+            {
+              "enabled": true,
+              "name": "sales",
+              "value": "0"
+            },
+            {
+              "enabled": true,
+              "name": "weight",
+              "value": "0.0"
+            },
+            {
+              "enabled": true,
+              "name": "enoughNum",
+              "value": "0"
+            },
+            {
+              "enabled": true,
+              "name": "enoughMoney",
+              "value": "1"
+            },
+            {
+              "enabled": true,
+              "name": "reserve",
+              "value": "1"
+            },
+            {
+              "enabled": true,
+              "name": "reserveDays",
+              "value": "1"
+            },
+            {
+              "enabled": true,
+              "name": "reserveNum",
+              "value": "1"
+            },
+            {
+              "enabled": true,
+              "name": "modify",
+              "value": "1"
+            }
+          ]
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "192.168.1.200:8082",
+        "path": "/APPMerchant/appproduct/AppAddProductMessage.do"
+      },
+      "id": "4eddaac4-e95b-44db-93a4-5574ac2c9581",
+      "lastModified": "2017-10-26T09:53:27.862+08:00",
+      "name": "发布商品",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/x-www-form-urlencoded"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "auth0|59eef034467ec0247cdbff43"
+      },
+      "parentId": "5245c36d-1929-456f-9d3e-ac1f04f1eaae"
+    },
+    {
+      "uriEditor": true,
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Form",
+        "autoSetLength": true
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": [
+            {
+              "enabled": true,
+              "name": "token",
+              "value": "5172"
+            },
+            {
+              "enabled": true,
+              "name": "adminId",
+              "value": "48"
+            },
+            {
+              "enabled": true,
+              "name": "productId",
+              "value": "100000008"
+            },
+            {
+              "enabled": true,
+              "name": "status",
+              "value": "1"
+            }
+          ]
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "192.168.1.200:8082",
+        "path": "/APPMerchant/appproduct/AppUpdateProductStatus.do"
+      },
+      "id": "ca2708da-7457-48bc-b637-1480a6c60551",
+      "lastModified": "2017-10-26T11:05:47.587+08:00",
+      "name": "修改商品状态",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/x-www-form-urlencoded"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "auth0|59eef034467ec0247cdbff43"
+      },
+      "parentId": "5245c36d-1929-456f-9d3e-ac1f04f1eaae"
+    },
+    {
+      "type": "Service",
+      "id": "92d64c76-d06c-4401-b168-29c021b8a1ea",
+      "lastModified": "2017-10-24T11:28:54.681+08:00",
+      "name": "订单管理",
+      "parentId": "d6aa125d-0d81-4994-9936-95ba39dda849"
+    },
+    {
+      "uriEditor": true,
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Form",
+        "autoSetLength": true
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": [
+            {
+              "enabled": true,
+              "name": "token",
+              "value": "5823"
+            },
+            {
+              "enabled": true,
+              "name": "adminId",
+              "value": "48"
+            },
+            {
+              "enabled": true,
+              "name": "orderNo",
+              "value": "1710171508815194"
+            },
+            {
+              "enabled": true,
+              "name": "expressNo",
+              "value": "11111"
+            },
+            {
+              "enabled": true,
+              "name": "expressName",
+              "value": "zhongtong"
+            }
+          ]
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "192.168.1.200:8082",
+        "path": "/APPMerchant/apporder/AppSendGoodsByOrderNo.do"
+      },
+      "id": "0397ba15-b804-4f8f-bf0f-3e11188c4569",
+      "lastModified": "2017-10-24T14:25:04.186+08:00",
+      "name": "根据订单号发货",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/x-www-form-urlencoded"
+        }
+      ],
+      "metaInfo": {},
+      "parentId": "92d64c76-d06c-4401-b168-29c021b8a1ea"
+    },
+    {
+      "uriEditor": true,
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Form",
+        "autoSetLength": true
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": [
+            {
+              "enabled": true,
+              "name": "token",
+              "value": "5181"
+            },
+            {
+              "enabled": true,
+              "name": "adminId",
+              "value": "48"
+            },
+            {
+              "enabled": true,
+              "name": "orderNo",
+              "value": "1710171436473106"
+            }
+          ]
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "192.168.1.200:8082",
+        "path": "/APPMerchant/apporder/AppSelectOrderByOrderNo.do"
+      },
+      "id": "5b0ddbe2-df4c-4a61-89a1-9ddd6f572c40",
+      "lastModified": "2017-10-24T14:01:59.301+08:00",
+      "name": "根据订单号查询订单",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/x-www-form-urlencoded"
+        }
+      ],
+      "metaInfo": {},
+      "parentId": "92d64c76-d06c-4401-b168-29c021b8a1ea"
+    },
+    {
+      "uriEditor": true,
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Form",
+        "autoSetLength": true
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": [
+            {
+              "enabled": true,
+              "name": "token",
+              "value": "9687"
+            },
+            {
+              "enabled": true,
+              "name": "adminId",
+              "value": "48"
+            },
+            {
+              "enabled": true,
+              "name": "orderNo",
+              "value": "1710171508815194"
+            }
+          ]
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "192.168.1.200:8082",
+        "path": "/APPMerchant/apporder/AppselectexpressByOrderNo.do"
+      },
+      "id": "76546ff2-a49a-412e-a012-e0eab04bc776",
+      "lastModified": "2017-10-24T15:01:34.252+08:00",
+      "name": "查询快递/物流",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/x-www-form-urlencoded"
+        }
+      ],
+      "metaInfo": {},
+      "parentId": "92d64c76-d06c-4401-b168-29c021b8a1ea"
+    },
+    {
+      "uriEditor": true,
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Form",
+        "autoSetLength": true
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": [
+            {
+              "enabled": true,
+              "name": "token",
+              "value": "4861"
+            },
+            {
+              "enabled": true,
+              "name": "adminId",
+              "value": "48"
+            },
+            {
+              "enabled": true,
+              "name": "statusNum",
+              "value": "50"
+            }
+          ]
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "192.168.1.200:8082",
+        "path": "/APPMerchant/apporder/AppSelectOrderBystatus.do"
+      },
+      "id": "efd96da9-e4a1-4eeb-b934-fa3a8472ef73",
+      "lastModified": "2017-10-24T11:32:06.765+08:00",
+      "name": "根据订单状态查询订单",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/x-www-form-urlencoded"
+        }
+      ],
+      "metaInfo": {},
+      "parentId": "92d64c76-d06c-4401-b168-29c021b8a1ea"
+    }
+  ]
+}
